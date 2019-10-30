@@ -16,7 +16,6 @@ public class AutoScreenScheduler extends TimerTask {
     public void run() {
         String timeStamp = new SimpleDateFormat("HH:mm:ss.dd.MM.yyyy").format(new Date());
         String tFile = path + "/" + timeStamp + "." + fileExtension;
-        System.out.println(tFile);
         File file = new File(tFile);
         try {
             ImageIO.write(Screen.create(), fileExtension, file);

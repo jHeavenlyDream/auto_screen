@@ -22,7 +22,6 @@ public class MainApp {
 
     public MainApp() {
         if (!SystemTray.isSupported()) {
-            //TODO:  show msg
             JOptionPane.showMessageDialog(null, "Not support tray");
             return;
         }
@@ -66,7 +65,6 @@ public class MainApp {
         } catch (AWTException awtException) {
             awtException.printStackTrace();
         }
-
     }
 
     private void createScreen(){
