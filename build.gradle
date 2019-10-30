@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:28.0-jre'
+    implementation 'commons-io:commons-io:2.6'
+
+
+    testImplementation 'junit:junit:4.12'
+}
+
+application {
+    mainClassName = 'org.jhd.auto.screen.Main'
+}
